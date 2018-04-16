@@ -1,8 +1,14 @@
 import * as $ from "jquery";
 
-const URL_TALK="https://jsonplaceholder.typicode.com/posts";
-const promise$ = $.get(URL_TALK);
 
-promise$.then(data =>
-      console.log(data)
-);
+export class Session {
+
+    constructor (private _id :number, private _name :string, private  _eventType :string, private _speakers :string, private _description :string){
+
+
+}
+}
+
+
+
+
